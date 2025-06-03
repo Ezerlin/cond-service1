@@ -8,7 +8,159 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- HTML сокращён ради компактности -->
-  <!-- Сюда вставляется весь index.html из canvas -->
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Денис — профессиональный ремонт и установка кондиционеров в Екатеринбурге</h1>
+      <p class="sub">Выезд в день обращения</p>
+      <p class="desc">Не волнуйтесь, если сложно объяснить проблему — я сам уточню все детали и помогу разобраться</p>
+      <div class="buttons">
+        <a href="https://wa.me/79220212001" class="btn whatsapp">WhatsApp</a>
+        <a href="https://t.me/+79220212001" class="btn telegram">Telegram</a>
+      </div>
+      <a href="tel:+79220212001" class="phone">+7 922 021-2001</a>
+    </div>
+  </header>
+
+  <!-- Почему выбирают меня -->
+  <section class="features">
+    <h2>Почему выбирают меня</h2>
+    <ul class="feature-list">
+      <li><strong>Приезжаю в день обращения</strong><br>Даже в Верхнюю Пышму и Первоуральск</li>
+      <li><strong>Работаю 7 дней в неделю</strong><br>Без выходных и праздников</li>
+      <li><strong>Профессиональное оборудование</strong><br>Инструменты, фреон, манометры всегда с собой</li>
+      <li><strong>Честные цены</strong><br>Без скрытых доплат. Любой способ оплаты</li>
+      <li><strong>9+ лет опыта</strong><br>Работа с брендами LG, Samsung, Haier и др.</li>
+      <li><strong>Гарантия результата</strong><br>Не устранил проблему — не платите</li>
+    </ul>
+  </section>
+
+  <!-- Услуги -->
+  <section class="services">
+    <h2>Услуги</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Обслуживание кондиционеров</h3>
+        <ul>
+          <li>Глубокая чистка фильтров и теплообменников</li>
+          <li>Проверка и дозаправка фреона</li>
+          <li>Промывка дренажной системы</li>
+          <li>Диагностика электроники и датчиков</li>
+          <li>Антибактериальная обработка</li>
+        </ul>
+        <p class="note">Акция: чистка дренажа в подарок!</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Ремонт кондиционеров</h3>
+        <ul>
+          <li>Не охлаждает / не греет</li>
+          <li>Течет вода / засоры</li>
+          <li>Шумит или вибрирует</li>
+          <li>Не включается / сбои платы</li>
+          <li>Заправка фреоном, замена деталей</li>
+        </ul>
+        <p class="note">Гарантия от 1 года на все работы</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Установка под ключ</h3>
+        <ul>
+          <li>Выезд и консультация — бесплатно</li>
+          <li>Монтаж блоков и коммуникаций</li>
+          <li>Заправка, настройка, запуск</li>
+          <li>Уборка и защита мебели</li>
+          <li>Инструкция по пользованию</li>
+        </ul>
+        <p class="note">Работаю по Екатеринбургу и области</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Квиз -->
+  <section class="quiz">
+    <h2>Оставьте заявку</h2>
+    <form action="https://api.telegram.org/bot7575101778:AAGQDD0hu5IHRCc-HAQOzGeLi41SZ7W295w/sendMessage" method="POST" target="_blank">
+      <label>Что вас интересует?</label><br>
+      <select name="interest" required>
+        <option value="Обслуживание">Обслуживание</option>
+        <option value="Ремонт">Ремонт</option>
+        <option value="Установка под ключ">Установка под ключ</option>
+      </select><br><br>
+
+      <label>Когда нужно выполнить работу?</label><br>
+      <select name="срок" required>
+        <option value="Сегодня-завтра">Сегодня-завтра</option>
+        <option value="В течение недели">В течение недели</option>
+        <option value="Нужна консультация">Нужна консультация</option>
+      </select><br><br>
+
+      <input type="text" name="name" placeholder="Ваше имя" required><br>
+      <input type="tel" name="phone" placeholder="Телефон" required><br>
+      <textarea name="comment" placeholder="Комментарий (необязательно)"></textarea><br>
+
+      <label><input type="checkbox" required> Я согласен с <a href="privacy.pdf" target="_blank">политикой конфиденциальности</a></label><br><br>
+
+      <button type="submit" class="btn submit">Отправить заявку</button>
+    </form>
+  </section>
+
+  <!-- Отзывы -->
+  <section class="reviews">
+    <h2>Отзывы клиентов</h2>
+    <div class="review-list">
+      <div class="review">
+        <p class="quote">"Денис приехал в тот же день! Кондиционер перестал охлаждать и начал течь. Почистил за час — работает как новый. Цена честная!"</p>
+        <p class="author">Анна Петрова, ЖК "Академический"</p>
+      </div>
+      <div class="review">
+        <p class="quote">"Устанавливали кондиционер в офисе. Всё сделал аккуратно, провода спрятал. Через месяц — профилактика. Рекомендую!"</p>
+        <p class="author">Сергей Иванов, ул. Ленина</p>
+      </div>
+      <div class="review">
+        <p class="quote">"До него были 2 мастера и не смогли. Денис нашёл и устранил проблему за 30 минут. Профессионал!"</p>
+        <p class="author">Мария Смирнова, Уралмаш</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Часто задаваемые вопросы</h2>
+    <div class="faq-item">
+      <p class="question">Сколько стоит чистка кондиционера в Екатеринбурге?</p>
+      <p class="answer">От 1 500 руб за стандартную чистку. Точную цену назову после осмотра. Чистка дренажа — в подарок!</p>
+    </div>
+    <div class="faq-item">
+      <p class="question">Выезжаете ли в область (Первоуральск, Верхняя Пышма)?</p>
+      <p class="answer">Да, работаю по всей Свердловской области</p>
+    </div>
+    <div class="faq-item">
+      <p class="question">Какие кондиционеры ремонтируете?</p>
+      <p class="answer">Все бренды: LG, Samsung, Ballu, Haier, Daikin, Mitsubishi, Panasonic и др.</p>
+    </div>
+    <div class="faq-item">
+      <p class="question">Работаете в выходные и праздники?</p>
+      <p class="answer">Да, 7 дней в неделю с 9:00 до 21:00</p>
+    </div>
+    <div class="faq-item">
+      <p class="question">Что если проблема повторится?</p>
+      <p class="answer">Даю письменную гарантию от 1 года. Если проблема вернется — устраню бесплатно</p>
+    </div>
+  </section>
+
+  <!-- Контакты и футер -->
+  <footer class="footer">
+    <h2>Контакты</h2>
+    <p>Телефон: <a href="tel:+79220212001">+7 922 021-2001</a></p>
+    <p>График работы: 9:00–21:00 ежедневно</p>
+    <div class="footer-buttons">
+      <a href="https://wa.me/79220212001" class="btn whatsapp">WhatsApp</a>
+      <a href="https://t.me/+79220212001" class="btn telegram">Telegram</a>
+    </div>
+    <p>На связи до и после выполнения работ</p>
+    <p><a href="privacy.pdf" target="_blank">Политика конфиденциальности (PDF)</a></p>
+    <p>&copy; 2025 Денис — ремонт и установка кондиционеров в Екатеринбурге</p>
+  </footer>
 </body>
 </html>
